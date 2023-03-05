@@ -1,0 +1,10 @@
+##########################################
+# SSH接続を楽にする設定
+##########################################
+# ~/.ssh/configsに書かれたホストをfzfで選んで `ssh <ホスト名>` をコマンドライン似ペーストする
+function s() {
+    local host=$(grep -E "^Host " ~/.ssh/config | awk '{print $2}' | fzf)
+    if [ -n "$host" ]; then
+        print -z "ssh $host"
+    fi
+}

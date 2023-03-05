@@ -1,0 +1,5 @@
+# DOTFILES_DIRSで指定されたディレクトリの中の各ファイルはホームディレクトリ下にsymlinkが張られる
+# DOTFILES_PATHはinstall.shまたはzshrcから設定される
+DOTFILES_DIRS=$DOTFILES_PATH
+# COPY_ALWAYSで指定されたファイルはsymlinkではなくcopyされる
+COPY_ALWAYS="git_template/HEAD"
