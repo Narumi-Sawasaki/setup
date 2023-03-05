@@ -1,9 +1,3 @@
-# 方針を決める
-# * privateな情報は含めない
-# 	* セキュリティ的にもコンプラ的にも危ない
-# * ghqは利用する
-# 	* 公開リポジトリだからgitの設定はいらない
-
 # brewのインストール
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
