@@ -9,4 +9,4 @@ alias files_in_current_dir="ls -a | fzf"
 alias files_in_current_dir_recur="find . | grep -v 'git' | grep -v '^\.$' |  fzf"
 alias -g today="date '+%Y/%m/%d' | tr -d '\n' | tee >(pbcopy)"
 alias -g now="date '+%H:%M' | tr -d '\n' | tee >(pbcopy)"
-alias n=nvim
+alias v=nvim

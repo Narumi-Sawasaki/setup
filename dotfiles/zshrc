@@ -33,3 +33,5 @@ for function in ~/.zsh/functions/*; do
   source $function
 done
 
+
+[ -f "/Users/p/.ghcup/env" ] && source "/Users/p/.ghcup/env" # ghcup-env
