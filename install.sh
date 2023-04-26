@@ -13,6 +13,6 @@ brew install rcrc
 
 # ghqの設定が必要な気がする
 ghq get https://github.com/Narumi-Sawasaki/setup.git
-GHQ_PATH=$(git config -l | grep ghq.root | cut -d "=" -f 2)
-DOTFILES_PATH="$GHQ_PATH/src/github.com/Narumi-Sawasaki/setup/dotfiles"
-RCRC=$DOTFILES_PATH/rcrc rcup
+GHQ_PATH=$(ghq root)
+DOTFILES_PATH="$GHQ_PATH/github.com/Narumi-Sawasaki/setup/dotfiles"
+env RCRC=$DOTFILES_PATH/rcrc rcup

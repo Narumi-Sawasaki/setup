@@ -5,7 +5,7 @@ zstyle ':completion:*:default' menu select=1
 bindkey -e
 
 # その他設定
-source "$HOME/.sdkman/bin/sdkman-init.sh"
+# source "$HOME/.sdkman/bin/sdkman-init.sh"
 DIRSTACKSIZE=100
 setopt transient_rprompt
 setopt AUTO_PUSHD
