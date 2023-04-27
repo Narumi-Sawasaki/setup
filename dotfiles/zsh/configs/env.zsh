@@ -25,8 +25,8 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-
 export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 export PUPPETEER_EXECUTABLE_PATH=`which chromium`
-
 source /Users/s/.ghcup/env
+# libpq内のpg_dumpを使う
+export PATH=$PATH:/usr/local/Cellar/libpq/15.2/bin/:~/bin/
