@@ -27,6 +27,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 export PUPPETEER_EXECUTABLE_PATH=`which chromium`
-source /Users/s/.ghcup/env
+source ~/.ghcup/env
 # libpq内のpg_dumpを使う
 export PATH=$PATH:/usr/local/Cellar/libpq/15.2/bin/:~/bin/
+export AUTO_NOTIFY_THRESHOLD=5

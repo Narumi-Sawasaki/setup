@@ -1,15 +1,16 @@
 # brewのインストール
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-brew install zsh
-brew install rbenv
-brew install nodenv
+brew bundle install --file=dotfiles/Brewfile
+
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 # git clone https://github.com/nodenv/nodenv.git ~/.nodenv
 
-brew install ghq
-brew install fzf
-brew install rcrc
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
 
 # ghqの設定が必要な気がする
 ghq get https://github.com/Narumi-Sawasaki/setup.git
