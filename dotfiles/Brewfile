@@ -55,5 +55,3 @@ brew "mongodb/brew/mongodb-community"
 brew "supabase/tap/supabase"
 cask "sequel-ace"
 cask "vagrant"
-
-afawje[foijawpoeij
