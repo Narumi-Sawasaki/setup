@@ -39,6 +39,9 @@ set laststatus=2
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gr <Plug>(coc-references)
 inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+let g:go_auto_type_info = 1
+set updatetime=50
+
 
 set cursorline
 set cursorcolumn
