@@ -10,3 +10,5 @@ alias files_in_current_dir_recur="find . | grep -v 'git' | grep -v '^\.$' |  fzf
 alias -g today="date '+%Y/%m/%d' | tr -d '\n' | tee >(pbcopy)"
 alias -g now="date '+%H:%M' | tr -d '\n' | tee >(pbcopy)"
 alias v=nvim
+
+alias ic="cd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs"
