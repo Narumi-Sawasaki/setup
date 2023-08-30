@@ -3,6 +3,7 @@ Plug 'zsh-users/zsh-syntax-highlighting'
 Plug 'udalov/kotlin-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ollykel/v-vim'
+Plug 'jidn/vim-dbml'
 call plug#end()
 
 " 行番号表示

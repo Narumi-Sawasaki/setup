@@ -1,6 +1,6 @@
 source ~/.zplug/init.zsh
 zplug "mollifier/anyframe", at:4c23cb60
-zplug "woefe/git-prompt.zsh"
+
 
 if ! zplug check --verbose; then
 	printf "Install? [y/N]: "
