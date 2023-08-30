@@ -12,3 +12,5 @@ alias -g now="date '+%H:%M' | tr -d '\n' | tee >(pbcopy)"
 alias v=nvim
 
 alias ic="cd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs"
+
+alias tf="terraform"

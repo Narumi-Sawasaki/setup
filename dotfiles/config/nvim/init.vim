@@ -1,8 +1,8 @@
 call plug#begin()
 Plug 'zsh-users/zsh-syntax-highlighting'
 Plug 'udalov/kotlin-vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-commentary'
+Plug 'hashivim/vim-terraform' , { 'for': 'terraform'}
 call plug#end()
 
 " 行番号表示
@@ -35,9 +35,6 @@ set laststatus=2
 " vnoremap :  ;
 
 " GoTo code navigation.
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gr <Plug>(coc-references)
-inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 let g:go_auto_type_info = 1
 set updatetime=50
 
