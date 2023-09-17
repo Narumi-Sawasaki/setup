@@ -31,3 +31,8 @@ source ~/.ghcup/env
 # libpq内のpg_dumpを使う
 export PATH=$PATH:/usr/local/Cellar/libpq/15.2/bin/:~/bin/
 export AUTO_NOTIFY_THRESHOLD=5
+
+# >>> coursier install directory >>>
+export PATH="$PATH:/Users/p/Library/Application Support/Coursier/bin"
+# <<< coursier install directory <<<
+
