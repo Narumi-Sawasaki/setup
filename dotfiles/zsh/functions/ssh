@@ -1,15 +1,15 @@
 # ssh時にprofileを変更する
-function get_ssh_host() {
-  if [ $# -eq 1 ]; then
-    echo $1
-  else
-    echo $(cat .ssh/config | grep 'Host\s' | awk '{print$2}' | sed -E '/^$/d' | fzf --exit-0 --select-1 --ansi --reverse)
-  fi
-}
-function ssh() {
-  ssh_host=$(get_ssh_host $1)
-  if [ -n "$ssh_host" ]; then
-    ~/bin/ssh-change-profile.sh $ssh_host
-    print -S "ssh $ssh_host"
-  fi
-}
+#function get_ssh_host() {
+#  if [ $# -eq 1 ]; then
+#    echo $1
+#  else
+##    echo $(cat .ssh/config | grep 'Host\s' | awk '{print$2}' | sed -E '/^$/d' | fzf --exit-0 --select-1 --ansi --reverse)
+#  fi
+#}
+#function ssh() {
+#  ssh_host=$(get_ssh_host $1)
+#  if [ -n "$ssh_host" ]; then
+#    ~/bin/ssh-change-profile.sh $ssh_host
+#    print -S "ssh $ssh_host"
+#  fi
+#}
