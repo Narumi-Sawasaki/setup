@@ -13,6 +13,7 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="${PATH}:$HOME/.local/share/ienv/bin"
 export PATH="${PATH}:/Users/l/Library/Python/2.7/bin"
 export PATH="${PATH}:$HOME/.nodenv/bin"
+export PATH="${PATH}:/Users/p/codeql"
 export DENO_INSTALL="/Users/p/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 #export JAVA_HOME=`/usr/libexec/java_home -v 11`
@@ -36,3 +37,4 @@ export AUTO_NOTIFY_THRESHOLD=5
 export PATH="$PATH:/Users/p/Library/Application Support/Coursier/bin"
 # <<< coursier install directory <<<
 
+eval $(opam env)

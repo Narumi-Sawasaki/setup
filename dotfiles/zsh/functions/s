@@ -5,6 +5,6 @@
 function s() {
     local host=$(grep -E "^Host " ~/.ssh/config | awk '{print $2}' | fzf)
     if [ -n "$host" ]; then
-        print -z "ssh $host"
+        print -z "sshx $host"
     fi
 }

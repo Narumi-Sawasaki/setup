@@ -13,3 +13,5 @@ rbenv global 3.2.2
 
 ruby deploy.rb
 brew bundle  install --file=~/.Brewfile
+
+npm install -g commitizen

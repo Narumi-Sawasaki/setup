@@ -1,0 +1,11 @@
+alias d='_git_diff'
+function _git_diff() {
+	local selected_file="."
+	selected_file="$(git ls-files -m | fzf)"
+	if [ -z $selected_file ]; then
+		echo "No selected for diff."
+		return 1
+	fi
+	echo "$selected_file" | pbcopy
+	git diff $selected_file
+}

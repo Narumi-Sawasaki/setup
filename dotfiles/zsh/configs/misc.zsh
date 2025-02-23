@@ -14,3 +14,4 @@ setopt AUTO_CD
 unsetopt CORRECT
 setopt CDABLE_VARS
 DISABLE_AUTO_TITLE="true"
+

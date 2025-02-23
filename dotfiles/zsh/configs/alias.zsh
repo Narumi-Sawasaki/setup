@@ -14,3 +14,13 @@ alias v=nvim
 alias ic="cd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs"
 
 alias tf="terraform"
+
+alias t="todo.sh"
+alias tl="todo.sh ls | sort"
+alias ts="todo.sh ls | sort"
+alias ta="todo.sh add"
+alias td="todo.sh del"
+alias tn="todo.sh done"
+
+# k8s
+alias ktl="kubectl"

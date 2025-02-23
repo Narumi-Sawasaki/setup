@@ -1,0 +1,41 @@
+[user]
+	name = Sawasaki Narumi
+	email = sawasaki@throo.io
+[includeIf "gitdir:~/repos/src/github.com-throo/"]
+	path = .gitconfig_work
+[includeIf "gitdir:~/.ssh/"]
+	path = .gitconfig_work
+[includeIf "gitdir:~/repos/src/github.com/sawasaki-narumi/"]
+	path = .gitconfig_sawasaki
+[core]
+	excludesfile = /Users/p/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[ghq]
+	root = /Users/p/repos/src
+[ghq "https://bitbucket.org/throo"]
+  vcs = git
+[commit]
+	template = /Users/p/.stCommitMsg
+[push]
+	default = current
+
+[color]
+	ui = auto
+[alias]
+	cb = checkout -b
+
+[diff]
+  tool = difftastic
+  external = difft
+[difftool]
+  prompt = false
+[difftool "difftastic"]
+  cmd = difft "$LOCAL" "$REMOTE"
+[pager]
+  difftool = true
+

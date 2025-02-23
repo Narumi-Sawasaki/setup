@@ -3,6 +3,9 @@ Plug 'zsh-users/zsh-syntax-highlighting'
 Plug 'udalov/kotlin-vim'
 Plug 'tpope/vim-commentary'
 Plug 'hashivim/vim-terraform' , { 'for': 'terraform'}
+Plug 'onyx-lang/onyx.vim'
+Plug 'wuelnerdotexe/vim-astro'
+" Plug 'keith/swift.vim'
 call plug#end()
 
 " 行番号表示
@@ -45,3 +48,12 @@ highlight CursorLine ctermbg=012 ctermfg=221
 
 " ヤンクとclipboardの連携
 set clipboard+=unnamed
+
+" bufferの移動
+nnoremap <silent> <C-j> :bprev<CR>
+nnoremap <silent> <C-k> :bnext<CR>
+
+:function! CopyFilename()
+	let @* = expand('%:t')
+:endfunction
+:command! Cf :call CopyFilename()

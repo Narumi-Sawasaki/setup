@@ -33,5 +33,9 @@ for function in ~/.zsh/functions/*; do
   source $function
 done
 
+# kubectlの補完を有効化
+source <(kubectl completion zsh)
 
-[ -f "/Users/p/.ghcup/env" ] && source "/Users/p/.ghcup/env" # ghcup-env
+[ -f "/Users/p/.ghcup/env" ] && source "/Users/p/.ghcup/env" # ghcup-env# Onyx config
+export ONYX_PATH="/Users/p/.onyx"
+export PATH="$ONYX_PATH/bin:$PATH"
